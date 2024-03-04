@@ -21,6 +21,7 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
+          use_existing_version_if_available: true
           application_name: frontend-docker
           environment_name: Frontend-docker-env
           existing_bucket_name: elasticbeanstalk-us-east-1-299817041405
